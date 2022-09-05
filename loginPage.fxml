@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="413.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.storemanagaement.loginD">
+   <children>
+      <Pane layoutX="20.0" layoutY="34.0" prefHeight="298.0" prefWidth="547.0" style="-fx-background-color: #008ecc;" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="34.0">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STORE MANAGEMENT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="75.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="12.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/IMG-20220828-WA0000.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="249.0" layoutY="10.0" opacity="0.54" prefHeight="387.0" prefWidth="278.0" style="-fx-background-color: #00121a;">
+         <effect>
+            <GaussianBlur radius="25.0" />
+         </effect>
+      </Pane>
+      <Pane layoutX="253.0" layoutY="13.0" prefHeight="387.0" prefWidth="271.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TextField fx:id="Txt_user" layoutX="25.0" layoutY="125.0" prefHeight="32.0" prefWidth="222.0" promptText="UserName" style="-fx-background-color: trans; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="Txt_pass" layoutX="25.0" layoutY="186.0" prefHeight="32.0" prefWidth="222.0" promptText="Password" style="-fx-background-color: trans; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Text fill="#008ecc" layoutX="102.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="Butt_log" layoutX="26.0" layoutY="240.0" mnemonicParsing="false" onAction="#deLog" prefHeight="30.0" prefWidth="222.0" style="-fx-background-color: #008ecc; -fx-background-radius: 00;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="38.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account? " />
+            <Button layoutX="155.0" layoutY="279.0" mnemonicParsing="false" onAction="#Showform" style="-fx-background-color: trans;" text="SignUp" textFill="#008ecc" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

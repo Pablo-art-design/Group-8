@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="629.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.storemanagaement.productsdisplay">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="Txt_id" layoutX="74.0" layoutY="92.0" prefHeight="35.0" prefWidth="483.0" promptText="Product Id" style="-fx-background-color: transparent; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="Txt_products" layoutX="23.0" layoutY="317.0" prefHeight="35.0" prefWidth="253.0" promptText="Product in Stock" style="-fx-background-color: transparent; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="Txt_name" layoutX="23.0" layoutY="242.0" prefHeight="35.0" prefWidth="253.0" promptText="Name" style="-fx-background-color: transparent; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="Txt_type" layoutX="326.0" layoutY="242.0" prefHeight="35.0" prefWidth="226.0" promptText="Type" style="-fx-background-color: transparent; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="Txt_category" layoutX="326.0" layoutY="322.0" prefHeight="25.0" prefWidth="226.0" promptText="category" style="-fx-background-color: trans; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;" />
+            <Label layoutX="188.0" layoutY="61.0" prefHeight="31.0" prefWidth="253.0" text="Search by product Id only">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="46.0" layoutY="207.0" prefHeight="27.0" prefWidth="111.0" text="Name">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="343.0" layoutY="212.0" prefHeight="17.0" prefWidth="97.0" text="Type">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="35.0" layoutY="291.0" prefHeight="30.0" prefWidth="180.0" text="Product in Stock">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="344.0" layoutY="287.0" prefHeight="17.0" prefWidth="143.0" text="Category">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Button layoutX="261.0" layoutY="389.0" mnemonicParsing="false" onAction="#ClearBtn" prefHeight="35.0" prefWidth="154.0" style="-fx-background-radius: 00; -fx-background-color: #008ecc;" text="CLEAR" textFill="WHITE" />
+            <Text fill="#008ecc" layoutX="275.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Button fx:id="butt_search" layoutX="226.0" layoutY="158.0" mnemonicParsing="false" onAction="#SearchButton" prefHeight="31.0" prefWidth="193.0" style="-fx-background-radius: 00; -fx-background-color: #008ecc;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="16.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: trans;" text="&lt;Back">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

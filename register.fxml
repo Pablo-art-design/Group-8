@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.storemanagaement.RegisterController">
+    <children>
+        <Pane layoutX="149.0" prefHeight="200.0" prefWidth="384.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="txt_submit" layoutX="62.0" layoutY="379.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="522.0" style="-fx-background-color: #008ecc; -fx-background-radius: 00;" text="Submit" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="txt_fullname" layoutX="59.0" layoutY="127.0" prefHeight="55.0" prefWidth="522.0" promptText="Fullname" style="-fx-background-color: transparent; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;" />
+                <TextField fx:id="txt_username" layoutX="59.0" layoutY="181.0" prefHeight="55.0" prefWidth="522.0" promptText="UserName" style="-fx-background-color: transparent; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;" />
+                <TextField fx:id="txt_email" layoutX="59.0" layoutY="235.0" prefHeight="55.0" prefWidth="522.0" promptText="E-mail" style="-fx-background-color: transparent; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;" />
+                <Text fx:id="Frm2" fill="#008ecc" layoutX="255.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Text>
+                <Pane prefHeight="44.0" prefWidth="629.0" style="-fx-background-color: #008ecc;">
+               <children>
+                  <Button fx:id="txt_next" layoutX="25.0" layoutY="10.0" mnemonicParsing="false" onAction="#showDashboard" style="-fx-background-color: trans;" text="Next" textFill="WHITE" />
+               </children>
+                </Pane>
+                <Text fx:id="Frm1" fill="WHITE" layoutX="227.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcom To Pablo Ventures.">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Text>
+            <PasswordField fx:id="txt_password" layoutX="62.0" layoutY="289.0" prefHeight="55.0" prefWidth="522.0" promptText="Password" style="-fx-background-color: trans; -fx-border-color: #008ecc; -fx-border-width: 0px 0px 2px 0px;" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
